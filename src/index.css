@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Quicksand:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    color: #321e1e;
+    font-family: 'Quicksand';
+    font-weight: 500;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+.logo {
+    width: 100%;
+    background-color: #f4a226;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & img {
+        width: 15%;
+        min-width: 13rem;
+
+        padding: 1.5rem;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Rubik Moonrocks';
+    font-style: normal;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    word-spacing: 30px;
+
+    padding: 1rem 0;
+}
+
+.add-form {
+    background-color: #e5771f;
+    padding: 2.8rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.add-form-input {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.8rem;
+}
+
+h3 {
+    margin-right: 1.6rem;
+    font-size: 2rem;
+}
+
+button,
+select,
+input {
+    background-color: #ffebb3;
+    color: #321e1e;
+    font-family: inherit;
+    border: none;
+    border-radius: 10rem;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.add-form button {
+    text-transform: uppercase;
+    background-color: #76c7ad;
+}
+
+.list {
+    background-color: #4e3636;
+    color: #ffebb3;
+    padding: 4rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.actions button,
+.list select {
+    text-transform: uppercase;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0.8rem;
+}
+
+.list ul {
+    list-style: none;
+    width: 80%;
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
+    justify-content: center;
+    align-content: start;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+input[type='checkbox'] {
+    height: 1.6rem;
+    width: 1.6rem;
+    accent-color: #e5771f;
+}
+
+.list li button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    transform: translateY(2px);
+}
+
+.stats {
+    background-color: #76c7ad;
+    text-align: center;
+    font-weight: 700;
+    padding: 3.2rem 0;
+
+    & img {
+        width: 3rem;
+        margin-left: 1rem;
+        vertical-align: text-bottom;
+    }
+}
+
+@media (width >= 36em) {
+    body {
+        font-size: 2rem;
+    }
+
+    .logo {
+        & img {
+            padding: 3rem;
+        }
+    }
+
+    h1 {
+        font-size: 6rem;
+        padding: 2.4rem 0;
+    }
+
+    .actions button,
+    .list select {
+        font-size: 1.2rem;
+    }
+
+    input[type='checkbox'] {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media (width >= 48em) {
+    body {
+        font-size: 2.4rem;
+    }
+
+    .logo {
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    button,
+    select,
+    input {
+        padding: 1.2rem 3.2rem;
+        font-size: 1.8rem;
+    }
+
+    .actions button,
+    .list select {
+        padding: 0.8rem 2.4rem;
+        font-size: 1.4rem;
+    }
+
+    .list li button {
+        font-size: 1.8rem;
+    }
+}
