@@ -1,6 +1,6 @@
 # Get Packed
 
-A simple React application to help you plan and organize your packing list for trips. Users can add items, mark them as packed/unpacked, delete them, and even sort or clear your list as needed.
+A simple React application to help you plan and organize your packing list for trips. Users can add items, mark them as packed/unpacked, delete them, and even sort them or clear your list as needed.
 
 ## Features
 
